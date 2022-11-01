@@ -9,6 +9,9 @@ function App() {
             <div className="mb-6 rounded-full">
               <img src={profileImage} alt="profile image" />
             </div>
+            <h2 className="font-bold text-[#101828] text-center text-xl">
+              Cordelia Ukpai
+            </h2>
           </div>
         </div>
         <div></div>
