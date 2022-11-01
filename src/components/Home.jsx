@@ -3,6 +3,9 @@ import kebabMenu from "../assets/kebab-menu.svg";
 import backIcon from "../assets/back-icon.svg";
 import slackIcon from "../assets/slack.svg";
 import githubIcon from "../assets/github.svg";
+import zuri from "../assets/large-zuri-icon.svg";
+// import HNG from "../assets/";
+import I4G from "../assets/large-I4G.svg";
 function Home() {
   const links = [
     {
@@ -59,10 +62,15 @@ function Home() {
             );
           })}
         </div>
-        <div className="flex w-full justify-center py-6">
+        <div className="flex w-full justify-center py-6 mb-16">
           <img src={slackIcon} alt="slack icon" className="mr-6" />
           <img src={githubIcon} alt="github icon" className="" />
         </div>
+        <footer className="border-t flex flex-col md:flex-row justify-start py-9">
+          <img src={zuri} alt="" className="max-w-[185px] max-h-[24px]" />
+          <p className="text-[#667085]">HNG Internship 9 Frontend Task</p>
+          <img src={I4G} alt="" />
+        </footer>
       </div>
     </div>
   );
