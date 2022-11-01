@@ -13,6 +13,9 @@ function App() {
               Cordelia Ukpai
             </h2>
           </div>
+          <button className="absolute right-0 -top-5 w-10 h-10 border border-dashed border-[#D0D5DD] flex justify-center items-center rounded-full mr-4">
+            <img src={kebabMenu} alt="menu" />
+          </button>
         </div>
         <div></div>
         <div></div>
