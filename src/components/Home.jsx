@@ -66,10 +66,18 @@ function Home() {
           <img src={slackIcon} alt="slack icon" className="mr-6" />
           <img src={githubIcon} alt="github icon" className="" />
         </div>
-        <footer className="border-t flex flex-col md:flex-row justify-start py-9">
-          <img src={zuri} alt="" className="max-w-[185px] max-h-[24px]" />
-          <p className="text-[#667085]">HNG Internship 9 Frontend Task</p>
-          <img src={I4G} alt="" />
+        <footer className="border-t flex flex-col md:flex-row justify-start pt-9 md:justify-between">
+          <div>
+            <img
+              src={zuri}
+              alt=""
+              className="max-w-[185px] max-h-[24px] mb-3 "
+            />
+          </div>
+          <p className="text-[#667085] mb-3">HNG Internship 9 Frontend Task</p>
+          <div className="">
+            <img src={I4G} alt="" className="text-start h-6" />
+          </div>
         </footer>
       </div>
     </div>
