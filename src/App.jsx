@@ -1,6 +1,14 @@
 import profileImage from "./assets/profile-img.svg";
 import kebabMenu from "./assets/kebab-menu.svg";
 function App() {
+  const links = [
+    { name: "Twitter Link", id: "", href: "" },
+    { name: "Zuri Team", id: "", href: "" },
+    { name: "Zuri Books", id: "", href: "" },
+    { name: "Pythin Books", id: "", href: "" },
+    { name: "Background Check for Coders", id: "", href: "" },
+    { name: "Design Books", id: "", href: "" },
+  ];
   return (
     <div className="App">
       <div className="flex flex-col py-16">
