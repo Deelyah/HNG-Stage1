@@ -1,25 +1,36 @@
-import zuri from "../assets/large-zuri-icon.svg";
-import I4G from "../assets/large-I4G.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import leftArrow from "../assets/left-arrow.svg";
 
 function ErrorPage() {
+  const navigateTo = useNavigate();
   return (
-    <div className="relative min-h-screen">
-      <div className="relative pt-20">
-        <h3 className="text-center">We can't find that page</h3>
-        <Link to="/" className="underline block text-center">
-          Go Home
-        </Link>
+    <div className="relative h-[90vh] flex items-center px-4 md:px-0 w-full">
+      <div className="w-full">
+        <p className="text-[#1570EF] font-semibold mb-3">404 error</p>
+        <h2 className="text-[#101828] text-4xl md:text-6xl mb-4 md:mb-6">
+          We can't find that page
+        </h2>
+        <p className="text-lg text-[#475467] mb-8 md:mb-12">
+          Sorry, the page you are looking for doesn't exist or has been moved.
+        </p>
+        <div className="flex flex-col-reverse md:flex-row md:justify-start">
+          <button
+            className="rounded-lg py-3 md:py-4 md:mr-3 flex items-center justify-center md:px-7 md:text-lg text-[#344054] font-semibold border border-[#D0D5DD]"
+            onClick={() => {
+              navigateTo(-1);
+            }}
+          >
+            <img src={leftArrow} alt="left arrow" className="mr-4" />
+            Go back
+          </button>
+
+          <Link to="/" className="block">
+            <button className="rounded-lg py-3 md:py-4 mb-3  md:mb-0 bg-[#1570EF] md:px-7 text-white md:text-lg font-semibold w-full md:w-fit">
+              Take me home
+            </button>
+          </Link>
+        </div>
       </div>
-      <footer className="absolute bottom-0 right-10 left-10 border-t flex flex-col md:flex-row justify-start pt-9 md:justify-between">
-        <div>
-          <img src={zuri} alt="" className="max-w-[185px] max-h-[24px] mb-3 " />
-        </div>
-        <p className="text-[#667085] mb-3">HNG Internship 9 Frontend Task</p>
-        <div className="">
-          <img src={I4G} alt="" className="text-start h-6" />
-        </div>
-      </footer>
     </div>
   );
 }
