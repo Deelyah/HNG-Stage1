@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ErrorPage from "./components/ErrorPage";
-import Home from "./components/Home";
+import ErrorPage from "./pages/ErrorPage";
+import Home from "./pages/Home";
 import PageFooter from "./components/PageFooter";
 function App() {
   return (

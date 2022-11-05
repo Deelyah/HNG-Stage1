@@ -3,8 +3,9 @@ import kebabMenu from "../assets/kebab-menu.svg";
 import backIcon from "../assets/back-icon.svg";
 import slackIcon from "../assets/slack.svg";
 import githubIcon from "../assets/github.svg";
-function Home() {
-  const links = [
+import { Link } from "react-router-dom";
+const Home = () => {
+  const externalLinks = [
     {
       name: "Twitter Link",
       id: "btn__zuri",
@@ -24,6 +25,7 @@ function Home() {
       href: "https://books.zuri.team/design-rules",
     },
   ];
+  const internalLinks = [{ name: "Contact", path: "/contact" }];
   return (
     <div className="flex justify-center w-full">
       <div className="flex flex-col py-16 w-full">
@@ -33,7 +35,8 @@ function Home() {
               <img src={profileImage} alt="profile image" id="profile_img" />
             </div>
             <h2
-              className="font-bold text-[#101828] text-center text-xl"
+              className="font-bold t
+              0ext-[#101828] text-center text-xl"
               id="twitter"
             >
               _Dee_lia
@@ -46,7 +49,7 @@ function Home() {
           </button>
         </div>
         <div>
-          {links.map((link, index) => {
+          {externalLinks.map((link, index) => {
             return (
               <a
                 className="block cursor-pointer text-center rounded-lg bg-[#EAECF0] text-[#101828] font-medium text-sm md:text-lg py-6 mb-6"
@@ -58,6 +61,16 @@ function Home() {
               </a>
             );
           })}
+          {internalLinks.map((link, index) => {
+            return (
+              <Link
+                to={link.path}
+                className="block cursor-pointer text-center rounded-lg bg-[#EAECF0] text-[#101828] font-medium text-sm md:text-lg py-6 mb-6"
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </div>
         <div className="flex w-full justify-center py-6 mb-16">
           <img src={slackIcon} alt="slack icon" className="mr-6" />
@@ -66,6 +79,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
