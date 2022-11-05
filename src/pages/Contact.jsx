@@ -5,7 +5,7 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex w-full justify-center min-h-screen">
       <div className="pt-14 w-full md:w-3/5">
         <div>
           <h3 className="text-[#101828] font-semibold mb-4 text-4xl">
@@ -33,7 +33,7 @@ const Contact = () => {
                 name="firstname"
                 id="firstname"
                 placeholder="Enter your first name"
-                className="w-full px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+                className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
               />
             </div>
             <div className="flex flex-col mb-6 md:basis-1/2 md:pl-3">
@@ -48,7 +48,7 @@ const Contact = () => {
                 name="lastname"
                 id="lastname"
                 placeholder="Enter your last name"
-                className="w-full px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+                className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
               />
             </div>
           </div>
@@ -64,7 +64,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="yourname@email.com"
-              className="w-full px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+              className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
             />
           </div>
           <div className="flex flex-col mb-6">
