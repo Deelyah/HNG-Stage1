@@ -25,7 +25,7 @@ const Home = () => {
       href: "https://books.zuri.team/design-rules",
     },
   ];
-  const internalLinks = [{ name: "Contact", path: "/contact" }];
+  const internalLinks = [{ name: "Contact", path: "/contact", id: "contact" }];
   return (
     <div className="flex justify-center w-full">
       <div className="flex flex-col py-16 w-full">
@@ -67,6 +67,7 @@ const Home = () => {
               <Link
                 key={index}
                 to={link.path}
+                id={link.id}
                 className="block cursor-pointer text-center rounded-lg bg-[#EAECF0] text-[#101828] font-medium text-sm md:text-lg py-6 mb-6"
               >
                 {link.name}

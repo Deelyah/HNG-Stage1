@@ -26,30 +26,30 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row w-full">
             <div className="flex flex-col mb-6 md:basis-1/2 md:pr-3">
               <label
-                htmlFor="firstname"
+                htmlFor="first_name"
                 className="text-sm font-medium text-[#344054] mb-1.5"
               >
                 First name
               </label>
               <input
                 type="text"
-                name="firstname"
-                id="firstname"
+                name="first_name"
+                id="first_name"
                 placeholder="Enter your first name"
                 className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
               />
             </div>
             <div className="flex flex-col mb-6 md:basis-1/2 md:pl-3">
               <label
-                htmlFor="lastname"
+                htmlFor="last_name"
                 className="text-sm font-medium text-[#344054] mb-1.5"
               >
                 Last name
               </label>
               <input
                 type="text"
-                name="lastname"
-                id="lastname"
+                name="last_name"
+                id="last_name"
                 placeholder="Enter your last name"
                 className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
               />
@@ -93,7 +93,7 @@ const Contact = () => {
           ></BaseCheckbox>
 
           <div className="my-8">
-            <BaseButton>Send a message</BaseButton>
+            <BaseButton id="btn_submit">Send a message</BaseButton>
           </div>
         </form>
       </div>
