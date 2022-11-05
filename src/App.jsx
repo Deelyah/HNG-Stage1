@@ -15,7 +15,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      <div className="w-full px-2 md:px-28 absolute bottom-0 right-5 left-5 ">
+      <div className="w-full px-4 sm:px-8 md:px-28 bg-white">
         <PageFooter />
       </div>
     </div>
