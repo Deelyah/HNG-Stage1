@@ -43,6 +43,7 @@ const Home = () => {
             </h2>
             {/* <h2 id="slack" >Deelyah</h2> */}
           </div>
+
           <button className="absolute right-0 -top-5 w-10 h-10 border border-dashed border-[#D0D5DD] flex justify-center items-center rounded-full">
             <img src={kebabMenu} alt="menu" className="md:hidden" />
             <img src={backIcon} alt="back" className="hidden md:inline-block" />
@@ -64,6 +65,7 @@ const Home = () => {
           {internalLinks.map((link, index) => {
             return (
               <Link
+                key={index}
                 to={link.path}
                 className="block cursor-pointer text-center rounded-lg bg-[#EAECF0] text-[#101828] font-medium text-sm md:text-lg py-6 mb-6"
               >
