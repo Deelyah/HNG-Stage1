@@ -1,9 +1,12 @@
 import BaseButton from "../components/base-components/BaseButton";
+import BaseCheckbox from "../components/base-components/BaseCheckbox";
 
 const Contact = () => {
+  const name = "_dee_lia";
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   return (
     <div className="flex w-full justify-center min-h-screen">
       <div className="pt-14 w-full md:w-3/5">
@@ -83,6 +86,11 @@ const Contact = () => {
               placeholder="Send me a message and I'll reply you as soon as possible..."
             ></textarea>
           </div>
+
+          <BaseCheckbox
+            customLabelStyle="text-[#475467]"
+            labelText={`You agree to providing your data to ${name} who may contact you.`}
+          ></BaseCheckbox>
 
           <div className="my-8">
             <BaseButton>Send a message</BaseButton>
