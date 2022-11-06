@@ -3,6 +3,9 @@ import BaseCheckbox from "../components/base-components/BaseCheckbox";
 
 const Contact = () => {
   const name = "_dee_lia";
+
+  const handleInputChange = (e) => {};
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -36,8 +39,12 @@ const Contact = () => {
                 name="first_name"
                 id="first_name"
                 placeholder="Enter your first name"
-                className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+                className="placeholder-[#667085]::placeholder w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#101828] rounded-lg"
+                onChange={(e) => {
+                  handleInputChange(e);
+                }}
               />
+              <p></p>
             </div>
             <div className="flex flex-col mb-6 md:basis-1/2 md:pl-3">
               <label
@@ -51,8 +58,12 @@ const Contact = () => {
                 name="last_name"
                 id="last_name"
                 placeholder="Enter your last name"
-                className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+                className="placeholder-[#667085]::placeholder w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#101828] rounded-lg"
+                onChange={(e) => {
+                  handleInputChange(e);
+                }}
               />
+              <p></p>
             </div>
           </div>
           <div className="flex flex-col mb-6">
@@ -67,7 +78,10 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="yourname@email.com"
-              className="w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg"
+              className="placeholder-[#667085]::placeholder w-full focus:border-[#84CAFF] px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] rounded-lg text-[#101828]"
+              onChange={(e) => {
+                handleInputChange(e);
+              }}
             />
           </div>
           <div className="flex flex-col mb-6">
@@ -82,8 +96,11 @@ const Contact = () => {
               id="message"
               cols="30"
               rows="5"
-              className="px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] text-[#667085] rounded-lg mt-1.5"
+              className="placeholder-[#667085]::placeholder px-3.5 py-2.5 focus:outline-none border border-[#D0D5DD] rounded-lg mt-1.5 text-[#101828]"
               placeholder="Send me a message and I'll reply you as soon as possible..."
+              onChange={(e) => {
+                handleInputChange(e);
+              }}
             ></textarea>
           </div>
 
